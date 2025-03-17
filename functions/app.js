@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-  return "Hello World";
+  res.send("Teste!");
 });
 
 app.use("/", router);
