@@ -1,9 +1,11 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
 const { PrismaClient } = require("@prisma/client");
 const serverless = require("serverless-http");
+
 const prisma = new PrismaClient();
+const app = express();
+const router = express.Router();
 
 app.use(cors());
 app.use(express.json());
