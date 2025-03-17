@@ -1,6 +1,6 @@
 [build]
   command = "npm start"
-  functions = "netlify/functions"
+  functions = "functions"
 
 [functions]
   external_node_modules = ["express"]
